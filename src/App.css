@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.ff_roboto {
+  font-family: 'Roboto';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero_img {
+  background-image: url(./assets/image/webp/hero_img.webp);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-colum {
+  writing-mode: none;
+  text-orientation: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text_rgba {
+  color: rgba(2, 80, 102, 0.70);
 }
 
-.App-link {
-  color: #61dafb;
+.play:hover .play1 {
+  transform: translateX(5px);
+  cursor: pointer !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.box_shadow {
+  box-shadow: 9px 16px 32px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bg_img {
+  background-image: url(./assets/image//webp/bg_img.webp);
+}
+
+.text_greay {
+  color: var(--Gray-2, #4F4F4F);
+}
+
+.footerline {
+  content: '';
+}
+
+.play:hover .play1 svg path {
+  fill: blue !important;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.over_hidden {
+  overflow: hidden !important;
+}
+
+.font_midum:hover {
+  -webkit-text-stroke: 0.6px#025066 !important;
+}
+
+@media (min-width:1280px) {
+  .text-colum {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
   }
 }
